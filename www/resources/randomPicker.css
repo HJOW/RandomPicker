@@ -1,0 +1,190 @@
+@charset "utf-8";
+
+/*
+Copyright 2021 HJOW
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.invisible {
+    display: none im !important;
+}
+
+.random-picker {
+    text-align: center;
+    background-color: rgba(93, 93, 93, 0.9);
+    color : rgba(210, 210, 210, 0.9);
+}
+
+.random-picker .footer {
+    text-align: left;
+    min-height: 30px;
+    line-height: 30px;
+}
+
+.random-picker .footer input {
+    height : 25px;
+    font-size: 10px;
+}
+
+.random-picker input, .random-picker textarea {
+    background-color: rgba(60, 60, 60, 0.9);
+    color : rgba(200, 200, 200, 0.9)
+}
+
+.random-picker input.disabled {
+    background-color: rgba(60, 60, 60, 0.5);
+}
+
+.random-picker .button.big, .random-picker input[type='text'] {
+    width : 150px;
+    height: 25px;
+}
+
+.random-picker .page {
+    width : 100%;
+    min-height: 10px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+}
+
+.random-picker .scroll_y {
+    overflow-y: scroll !important;
+}
+
+.random-picker .page:not(.active) {
+    display: none;
+}
+
+.random-picker .page .content {
+    width : 95%;
+}
+
+.random-picker .page .area {
+    width: 100%;
+    text-align: left;
+    padding: 5px 5px 5px 5px;
+}
+
+.random-picker pre {
+    background-color : transparent;
+    color: rgba(210, 210, 210, 0.9);
+    border : 0;
+}
+
+.random-picker .logarea {
+    position : fixed;
+    z-index: 11;
+    bottom : 0;
+    width: 100%;
+    height: 150px;
+    background-color: rgba(100, 100, 100, 0.8);
+}
+
+.random-picker .logarea .textarea.log {
+    width: 100%;
+    height: 100px;
+    background-color : transparent;
+    color: rgba(200, 200, 200, 0.8);
+}
+
+.random-picker .page .area {
+    width: 100%;
+    display: inline-block;
+}
+
+.random-picker .page .area.half {
+    width : 49%;
+    display: inline-block;
+}
+
+.random-picker .table.target .tr_no_item {
+    background-color : rgba(93, 93, 93, 0.7);
+    color : rgba(234, 234, 234, 0.9);
+}
+
+.random-picker .table.target .tr_no_item td {
+    border: 0;
+}
+
+.random-picker .table.target .tr_no_item td.drag_entered {
+    background-color : rgba(93, 93, 93, 0.3);
+}
+
+.random-picker .table.target .tr_target {
+    background-color : rgba(93, 93, 93, 0.7);
+    color : rgba(234, 234, 234, 0.9);
+    height: 15px;
+    border: 0;
+}
+
+.random-picker .table.target .tr_target.choosed {
+    background-color : rgba(189, 189, 189, 0.7);
+    color : rgba(25, 25, 25, 0.9);
+}
+
+.random-picker .table.target .tr_target td {
+    border: 1px solid rgba(150, 150, 150, 0.5);
+}
+
+.random-picker .table.target .tr_target td.drag_entered {
+    background-color : rgba(93, 93, 93, 0.3);
+}
+
+.random-picker .table.target .tr_target.choosed td.drag_entered {
+    background-color : rgba(189, 189, 189, 0.3);
+}
+
+.random-picker .xls_dnd_target.drag_entered .hidden_on_dragenter {
+    display: none;
+}
+
+.random-picker .xls_dnd_target:not(.drag_entered) .shown_on_dragenter {
+    display: none;
+}
+
+.random-picker .table.target .tr_target .td_index {
+    width: 70px;
+    text-align: right;
+    padding-right: 6px;
+}
+
+.random-picker .counter {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.random-picker .counter.counting {
+    border : 1px solid black;
+}
+
+.random-picker .float_left {
+    float: left;
+}
+
+.random-picker .table.target .tr_target .td_btn {
+    width: 60px;
+    text-align: right;
+}
+
+.random-picker .input.results {
+    width: 100%;
+}
