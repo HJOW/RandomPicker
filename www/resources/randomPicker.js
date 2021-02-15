@@ -131,6 +131,11 @@ function RandomPicker() {
             name : 'Bootstrap',
             license : 'MIT',
             url : 'https://github.com/twbs/bootstrap/blob/v3-dev/LICENSE'
+        },
+        {
+            name : 'Cordova',
+            license : 'Apache License 2.0',
+            url : 'https://cordova.apache.org'
         }
     ];
 
