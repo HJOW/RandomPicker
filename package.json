@@ -1,8 +1,8 @@
 {
   "name": "com.hjow.randompicker",
   "displayName": "RandomPicker",
-  "version": "1.0.0",
-  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "version": "0.0.1",
+  "description": "Random Picker",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,10 +10,11 @@
   "keywords": [
     "ecosystem:cordova"
   ],
-  "author": "Apache Cordova Team",
+  "author": "HJOW",
   "license": "Apache-2.0",
   "devDependencies": {
     "cordova-android": "^9.0.0",
+    "cordova-electron": "^1.1.1",
     "cordova-ios": "^6.2.0",
     "cordova-plugin-device": "^2.0.3",
     "cordova-plugin-inappbrowser": "^4.1.0",
@@ -29,7 +30,8 @@
     "platforms": [
       "ios",
       "android",
-      "windows"
+      "windows",
+      "electron"
     ]
   }
 }
